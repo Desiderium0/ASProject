@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Desiderium HCS\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Desiderium HCS\\.nuget\\packages"
+    ]
+  }
+}

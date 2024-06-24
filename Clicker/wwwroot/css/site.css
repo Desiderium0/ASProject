@@ -1,0 +1,6 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+.div-rigister {
+    background: linear-gradient(300deg, #c0c0c0 0%, #ffffff 100%, #000 100%);
+}
+

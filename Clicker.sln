@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34931.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clicker", "Clicker\Clicker.csproj", "{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataBase", "DataBase\DataBase.csproj", "{22B3505C-B4F0-4610-A3B5-4D5D609EE32A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22B3505C-B4F0-4610-A3B5-4D5D609EE32A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22B3505C-B4F0-4610-A3B5-4D5D609EE32A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22B3505C-B4F0-4610-A3B5-4D5D609EE32A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1FC55F1D-1480-4DDE-A3E1-AD4C800AF216}
+	EndGlobalSection
+EndGlobal

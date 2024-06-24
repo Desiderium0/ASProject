@@ -1,0 +1,31 @@
+﻿@model RegisterViewModel                              //Как я понял через данный атрибут вызывается модель из которой будут поступать данные (Мб только одна реализация) и через нее проходят данные
+@{
+    ViewData["Title"] = "ASP Кликер";               //Параметр хранящий данные [по имени] = данные 
+    ViewData["Date"] = @DateTime.Now;
+
+//method="post" отвечатет за отправку данных из формы, 
+//а asp-controller="Home" asp-action="Index" отвечает в каком контроллере будут выполнятся действия с данными
+}
+
+<div class="div-rigister">
+    <form method="post" asp-controller="HomePage" asp-action="Index">
+        <h1>Регистрация</h1>
+        <div>
+            <label asp-for="Login"></label>
+            <input asp-for="Login"/>
+            <span asp-validation-for="Login" class="text-danger"></span>
+        </div>
+        <div>
+            <label asp-for="Password"></label>
+            <input asp-for="Password" type="password" size="25" />
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+        <button asp- type="submit">Отправить</button>
+    </form>
+    <div>
+        @foreach (var user in Model.Users)
+        {
+            <p>@user.Login : @user.Id : @user.Password</p>
+        }
+    </div>
+</div>
