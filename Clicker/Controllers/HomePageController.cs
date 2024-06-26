@@ -14,41 +14,49 @@ namespace Clicker.Controllers
     {
         public IActionResult Index(RegisterViewModel registerModel)
         {
-            
-            using (ApplicationContext db = new ApplicationContext())
-            {
-                registerModel.Users = db.Users.ToList();
-                
-            }
-
             return View(registerModel);
+        }
+
+        [HttpPost]
+        public IActionResult CreateUser(RegisterViewModel registerModel)
+        {
+            using (ApplicationContext dataBase = new ApplicationContext())
+            {
+                dataBase.Database.EnsureCreated();
+                if (ModelState.IsValid)
+                {
+                    var user = new User
+                    {
+                        Login = registerModel.Login,
+                        Password = registerModel.Password
+                    };
+                    dataBase.Users.Add(user);
+                    dataBase.SaveChanges();
+                    registerModel.Users = dataBase.Users.ToList();
+                    return View("Index", registerModel);
+                }
+                registerModel.Users = dataBase.Users.ToList();
+                return View("Index", registerModel);
+            }
+        }
+
+        [HttpPost]
+        public IActionResult DeleteUsers(RegisterViewModel registerModel)
+        {
+            using (ApplicationContext dataBase = new ApplicationContext())
+            {
+                foreach (var item in dataBase.Users)
+                {
+                    dataBase.Remove(item);
+                }
+                dataBase.SaveChanges();
+            }
+            return View("Index", registerModel);
         }
 
         public IActionResult Shop()
         {
             return View();
-        }
-
-        public void CreateInstance(RegisterViewModel registerModel)
-        {
-            using (ApplicationContext db = new ApplicationContext())
-            {
-                if (db.Database == null)
-                {
-                    db.Database.EnsureCreated();
-                }
-                
-                // создаем два объекта User
-                User user = new User
-                {
-                    Password = registerModel.Password,
-                    Login = registerModel.Login
-                };
-
-                // добавляем их в бд
-                db.Users.AddRange(user);
-                db.SaveChanges();
-            }
         }
     }
 }
