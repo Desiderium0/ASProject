@@ -12,6 +12,8 @@ namespace Clicker.Controllers
 {
     public class HomePageController : Controller
     {
+        private ApplicationContext _dataBase = null!;
+
         public IActionResult Index(RegisterViewModel registerModel)
         {
             return View(registerModel);
@@ -20,9 +22,9 @@ namespace Clicker.Controllers
         [HttpPost]
         public IActionResult CreateUser(RegisterViewModel registerModel)
         {
-            using (ApplicationContext dataBase = new ApplicationContext())
+            using (_dataBase = new ApplicationContext())
             {
-                dataBase.Database.EnsureCreated();
+                _dataBase.Database.EnsureCreated();
                 if (ModelState.IsValid)
                 {
                     var user = new User
@@ -30,12 +32,12 @@ namespace Clicker.Controllers
                         Login = registerModel.Login,
                         Password = registerModel.Password
                     };
-                    dataBase.Users.Add(user);
-                    dataBase.SaveChanges();
-                    registerModel.Users = dataBase.Users.ToList();
+                    _dataBase.Users.Add(user);
+                    _dataBase.SaveChanges();
+                    registerModel.Users = _dataBase.Users.ToList();
                     return View("Index", registerModel);
                 }
-                registerModel.Users = dataBase.Users.ToList();
+                registerModel.Users = _dataBase.Users.ToList();
                 return View("Index", registerModel);
             }
         }
@@ -43,13 +45,13 @@ namespace Clicker.Controllers
         [HttpPost]
         public IActionResult DeleteUsers(RegisterViewModel registerModel)
         {
-            using (ApplicationContext dataBase = new ApplicationContext())
+            using (_dataBase = new ApplicationContext())
             {
-                foreach (var item in dataBase.Users)
+                foreach (var item in _dataBase.Users)
                 {
-                    dataBase.Remove(item);
+                    _dataBase.Remove(item);
                 }
-                dataBase.SaveChanges();
+                _dataBase.SaveChanges();
             }
             return View("Index", registerModel);
         }
