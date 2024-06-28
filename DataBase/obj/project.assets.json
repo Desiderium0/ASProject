@@ -4106,24 +4106,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Desiderium HCS\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Алексей\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Desiderium HCS\\source\\repos\\Clicker\\DataBase\\DataBase.csproj",
+      "projectUniqueName": "D:\\УЧЕБА\\Сам\\Влад Купцов\\ASProject\\DataBase\\DataBase.csproj",
       "projectName": "DataBase",
-      "projectPath": "C:\\Users\\Desiderium HCS\\source\\repos\\Clicker\\DataBase\\DataBase.csproj",
-      "packagesPath": "C:\\Users\\Desiderium HCS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Desiderium HCS\\source\\repos\\Clicker\\DataBase\\obj\\",
+      "projectPath": "D:\\УЧЕБА\\Сам\\Влад Купцов\\ASProject\\DataBase\\DataBase.csproj",
+      "packagesPath": "C:\\Users\\Алексей\\.nuget\\packages\\",
+      "outputPath": "D:\\УЧЕБА\\Сам\\Влад Купцов\\ASProject\\DataBase\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Desiderium HCS\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Алексей\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
