@@ -1,12 +1,13 @@
 ﻿using Clicker.Models;
 using Microsoft.AspNetCore.Mvc;
+using System.Linq;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
 using System.Threading.Tasks;
 using DataBase;
+using System.ComponentModel;
 
 namespace Clicker.Controllers
 {
@@ -14,9 +15,46 @@ namespace Clicker.Controllers
     {
         private ApplicationContext _dataBase = null!;
 
-        public IActionResult Index(RegisterViewModel registerModel)
+        #region FormRendering
+        public IActionResult RegisterForm()
         {
-            return View(registerModel);
+            return View();
+        }
+
+        public IActionResult LoginForm()
+        {
+            return View();
+        }
+        public IActionResult Home(LoginViewModel registerModel)
+        {
+            using (_dataBase = new ApplicationContext())
+            {
+                registerModel.Users = _dataBase.Users.ToList();
+                return View(registerModel);
+            }
+        }
+        #endregion
+
+        #region Actions
+        [HttpPost]
+        public IActionResult GetUser(LoginViewModel loginModel) 
+        {
+            using (_dataBase = new ApplicationContext())
+            {
+                var list = _dataBase.Users
+                    .Select(x => new { x.Login, x.Password })
+                    .ToList();
+
+                foreach (var data in list)
+                {
+                    if (data.Password == loginModel.Password
+                        && data.Login == loginModel.Login)
+                    {
+                        return View("Home", UploadTable(loginModel));
+                    }
+                }
+            }
+            return View("LoginForm");
         }
 
         [HttpPost]
@@ -34,9 +72,10 @@ namespace Clicker.Controllers
                     };
                     _dataBase.Users.Add(user);
                     _dataBase.SaveChanges();
+                    
+                    return View("Home", UploadTable(registerModel));
                 }
-                registerModel.Users = _dataBase.Users.ToList();
-                return View("Index", registerModel);
+                return View("RegisterForm");
             }
         }
 
@@ -51,12 +90,31 @@ namespace Clicker.Controllers
                 }
                 _dataBase.SaveChanges();
             }
-            return View("Index", registerModel);
+            return View("Home", registerModel);
+
+        }
+        #endregion
+
+        #region Methods
+        [Description("Метод для заполнения таблицы, обработкой моделью Login")]
+        public LoginViewModel UploadTable(LoginViewModel loginModel)
+        {
+            using (_dataBase = new ApplicationContext())
+            {
+                loginModel.Users = _dataBase.Users.ToList();
+                return loginModel;
+            }
         }
 
-        public IActionResult Shop()
+        [Description("Метод для заполнения таблицы, обработкой моделью Register")]
+        public RegisterViewModel UploadTable(RegisterViewModel registerModel)
         {
-            return View();
+            using (_dataBase = new ApplicationContext())
+            {
+                registerModel.Users = _dataBase.Users.ToList();
+                return registerModel;
+            }
         }
+        #endregion
     }
 }

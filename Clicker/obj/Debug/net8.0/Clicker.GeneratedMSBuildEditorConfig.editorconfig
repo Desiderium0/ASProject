@@ -17,35 +17,39 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Clicker
 build_property.RootNamespace = Clicker
-build_property.ProjectDir = D:\УЧЕБА\Сам\Влад Купцов\ASProject\Clicker\
+build_property.ProjectDir = C:\Users\Desiderium HCS\Desktop\ASProject\Clicker\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = D:\УЧЕБА\Сам\Влад Купцов\ASProject\Clicker
+build_property.MSBuildProjectDirectory = C:\Users\Desiderium HCS\Desktop\ASProject\Clicker
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/УЧЕБА/Сам/Влад Купцов/ASProject/Clicker/Views/About/Contact.cshtml]
+[C:/Users/Desiderium HCS/Desktop/ASProject/Clicker/Views/About/Contact.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRcQ29udGFjdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/УЧЕБА/Сам/Влад Купцов/ASProject/Clicker/Views/HomePage/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVBhZ2VcSW5kZXguY3NodG1s
+[C:/Users/Desiderium HCS/Desktop/ASProject/Clicker/Views/HomePage/Home.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVBhZ2VcSG9tZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/УЧЕБА/Сам/Влад Купцов/ASProject/Clicker/Views/HomePage/Shop.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVBhZ2VcU2hvcC5jc2h0bWw=
+[C:/Users/Desiderium HCS/Desktop/ASProject/Clicker/Views/HomePage/LoginForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVBhZ2VcTG9naW5Gb3JtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/УЧЕБА/Сам/Влад Купцов/ASProject/Clicker/Views/Shared/_Layout.cshtml]
+[C:/Users/Desiderium HCS/Desktop/ASProject/Clicker/Views/HomePage/RegisterForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVBhZ2VcUmVnaXN0ZXJGb3JtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Desiderium HCS/Desktop/ASProject/Clicker/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/УЧЕБА/Сам/Влад Купцов/ASProject/Clicker/Views/_ViewImports.cshtml]
+[C:/Users/Desiderium HCS/Desktop/ASProject/Clicker/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/УЧЕБА/Сам/Влад Купцов/ASProject/Clicker/Views/_ViewStart.cshtml]
+[C:/Users/Desiderium HCS/Desktop/ASProject/Clicker/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
