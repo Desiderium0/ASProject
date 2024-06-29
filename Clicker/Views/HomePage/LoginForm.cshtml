@@ -1,0 +1,18 @@
+﻿@model RegisterViewModel
+
+<main class="center-item background-grad">
+    <form class="d-flex flex-column align-items-center mt-3" method="post" asp-controller="HomePage" asp-action="GetUser">
+        <h1>Вход</h1>
+        <div>
+            <label asp-for="Login" class="form-text"></label>
+            <input asp-for="Login" class="form-control" />
+            <span asp-validation-for="Login" class="form-text text-danger"></span>
+        </div>
+        <div>
+            <label asp-for="Password" class="form-text"></label>
+            <input asp-for="Password" type="password" size="25" class="form-control" />
+            <span asp-validation-for="Password" class="form-text text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary">Войти</button>
+    </form>
+</main>

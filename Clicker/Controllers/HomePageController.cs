@@ -34,8 +34,6 @@ namespace Clicker.Controllers
                     };
                     _dataBase.Users.Add(user);
                     _dataBase.SaveChanges();
-                    registerModel.Users = _dataBase.Users.ToList();
-                    return View("Index", registerModel);
                 }
                 registerModel.Users = _dataBase.Users.ToList();
                 return View("Index", registerModel);

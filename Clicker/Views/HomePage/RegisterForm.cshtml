@@ -1,0 +1,37 @@
+﻿@model RegisterViewModel                              // Как я понял через данный атрибут вызывается модель из которой будут поступать данные (Мб только одна реализация) и через нее проходят данные
+@{
+    ViewData["Title"] = "ASP Кликер";               // Параметр хранящий данные [по имени] = данные
+    ViewData["Date"] = @DateTime.Now;
+
+    // method="post" отвечатет за отправку данных из формы,
+    // а asp-controller="Home" asp-action="Index" отвечает в каком контроллере будут выполнятся действия с данными
+}
+
+<main class="center-item background-grad">
+    <div class="div-register d-flex flex-column justify-content-center">
+        <form class="d-flex flex-column align-items-center mt-3" method="post" asp-controller="HomePage">
+            <h1>Регистрация</h1>
+            <div>
+                <label asp-for="Login" class="form-text"></label>
+                <input asp-for="Login" class="form-control" />
+                <span asp-validation-for="Login" class="form-text text-danger"></span>
+            </div>
+            <div>
+                <label asp-for="Password" class="form-text"></label>
+                <input asp-for="Password" type="password" size="25" class="form-control"/>
+                <span asp-validation-for="Password" class="form-text text-danger"></span>
+            </div>
+            <div>
+                <label asp-for="PasswordConfirm" class="form-text"></label>
+                <input asp-for="PasswordConfirm" type="password" size="25" class="form-control" />
+                <span asp-validation-for="PasswordConfirm" class="form-text text-danger"></span>
+            </div>
+            <div>
+                Есть аккаунт?<a asp-action="LoginForm">Войти</a>
+            </div>
+            <button type="submit" asp-action="CreateUser" class="btn btn-primary">Создать аккаунт</button>
+        </form>
+    </div>
+</main>
+
+
