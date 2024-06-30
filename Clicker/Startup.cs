@@ -37,7 +37,7 @@ namespace Clicker
             app.UseRouting();
 
             app.UseAuthorization();
-            app.UseAuthorization();
+            app.UseAuthentication();// Для авторизации и аунтентификаци пользователя
 
             app.UseEndpoints(endpoints =>
             {
