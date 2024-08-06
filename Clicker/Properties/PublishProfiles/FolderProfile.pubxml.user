@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\vladk\Desktop\Новая папка</_PublishTargetUrl>
+    <History>True|2024-08-06T07:49:21.7026929Z||;True|2024-08-05T23:13:24.9185939+08:00||;True|2024-08-05T22:55:39.2042507+08:00||;</History>
+    <LastFailureDetails />
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="helloappdb">
+      <Value>workstation id=projectb.mssql.somee.com%3bpacket size=4096%3buser id=Desiderium_SQLLogin_1%3bpwd=hp3ui5drc7%3bdata source=projectb.mssql.somee.com%3bpersist security info=False%3binitial catalog=projectb%3bTrustServerCertificate=True</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

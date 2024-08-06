@@ -9,7 +9,7 @@ namespace DataBase
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=helloappdb;Trusted_Connection=False;");
+            optionsBuilder.UseSqlServer(@"workstation id=projectb.mssql.somee.com;packet size=4096;user id=Desiderium_SQLLogin_1;pwd=hp3ui5drc7;data source=projectb.mssql.somee.com;persist security info=False;initial catalog=projectb;TrustServerCertificate=True;");
         }
     }
 }
