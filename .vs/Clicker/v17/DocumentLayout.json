@@ -3,36 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\vladk\\Desktop\\ASProject\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|c:\\users\\vladk\\desktop\\asproject\\clicker\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|solutionrelative:clicker\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|c:\\users\\vladk\\desktop\\asproject\\clicker\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|solutionrelative:clicker\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|c:\\users\\vladk\\desktop\\asproject\\clicker\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|solutionrelative:clicker\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|c:\\users\\vladk\\desktop\\asproject\\clicker\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|solutionrelative:clicker\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|c:\\users\\vladk\\desktop\\asproject\\clicker\\controllers\\homepagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|solutionrelative:clicker\\controllers\\homepagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{22B3505C-B4F0-4610-A3B5-4D5D609EE32A}|DataBase\\DataBase.csproj|c:\\users\\vladk\\desktop\\asproject\\database\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{22B3505C-B4F0-4610-A3B5-4D5D609EE32A}|DataBase\\DataBase.csproj|solutionrelative:database\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|c:\\users\\vladk\\desktop\\asproject\\clicker\\views\\homepage\\registerform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|solutionrelative:clicker\\views\\homepage\\registerform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|c:\\users\\vladk\\desktop\\asproject\\clicker\\libman.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|solutionrelative:clicker\\libman.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|c:\\users\\vladk\\desktop\\asproject\\clicker\\views\\homepage\\loginform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|solutionrelative:clicker\\views\\homepage\\loginform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|c:\\users\\vladk\\desktop\\asproject\\clicker\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|solutionrelative:clicker\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{22B3505C-B4F0-4610-A3B5-4D5D609EE32A}|DataBase\\DataBase.csproj|c:\\users\\vladk\\desktop\\asproject\\database\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{22B3505C-B4F0-4610-A3B5-4D5D609EE32A}|DataBase\\DataBase.csproj|solutionrelative:database\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|c:\\users\\vladk\\desktop\\asproject\\clicker\\clicker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|solutionrelative:clicker\\clicker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|c:\\users\\vladk\\desktop\\asproject\\clicker\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|solutionrelative:clicker\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|c:\\users\\vladk\\desktop\\asproject\\clicker\\clicker.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|solutionrelative:clicker\\clicker.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|c:\\users\\vladk\\desktop\\asproject\\clicker\\views\\homepage\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|solutionrelative:clicker\\views\\homepage\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,103 +42,115 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Clicker.csproj",
-              "DocumentMoniker": "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\Clicker.csproj",
-              "RelativeDocumentMoniker": "Clicker\\Clicker.csproj",
-              "ToolTip": "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\Clicker.csproj",
-              "RelativeToolTip": "Clicker\\Clicker.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-08-05T15:14:34.084Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Clicker",
-              "DocumentMoniker": "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\Clicker.csproj",
-              "RelativeDocumentMoniker": "Clicker\\Clicker.csproj",
-              "ToolTip": "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\Clicker.csproj",
-              "RelativeToolTip": "Clicker\\Clicker.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-07-04T15:13:15.113Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "HomePageController.cs",
-              "DocumentMoniker": "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\Controllers\\HomePageController.cs",
-              "RelativeDocumentMoniker": "Clicker\\Controllers\\HomePageController.cs",
-              "ToolTip": "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\Controllers\\HomePageController.cs",
-              "RelativeToolTip": "Clicker\\Controllers\\HomePageController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAQAAAA",
+              "Title": "style.css",
+              "DocumentMoniker": "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\wwwroot\\css\\style.css",
+              "RelativeDocumentMoniker": "Clicker\\wwwroot\\css\\style.css",
+              "ToolTip": "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\wwwroot\\css\\style.css",
+              "RelativeToolTip": "Clicker\\wwwroot\\css\\style.css",
+              "ViewState": "AQIAACAAAAAAAAAAAAAowDgAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-08-08T06:20:07.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "Clicker\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "Clicker\\wwwroot\\css\\site.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-08-08T06:20:03.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Home.cshtml",
+              "DocumentMoniker": "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\Views\\HomePage\\Home.cshtml",
+              "RelativeDocumentMoniker": "Clicker\\Views\\HomePage\\Home.cshtml",
+              "ToolTip": "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\Views\\HomePage\\Home.cshtml",
+              "RelativeToolTip": "Clicker\\Views\\HomePage\\Home.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-08T06:06:35.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\Models\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "Clicker\\Models\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\Models\\LoginViewModel.cs",
+              "RelativeToolTip": "Clicker\\Models\\LoginViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-04T11:54:55.988Z",
+              "WhenOpened": "2024-08-08T05:57:03.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\Models\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "Clicker\\Models\\RegisterViewModel.cs",
+              "ToolTip": "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\Models\\RegisterViewModel.cs",
+              "RelativeToolTip": "Clicker\\Models\\RegisterViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T05:22:47.52Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\vladk\\Desktop\\ASProject\\DataBase\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "DataBase\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\vladk\\Desktop\\ASProject\\DataBase\\Properties\\launchSettings.json",
-              "RelativeToolTip": "DataBase\\Properties\\launchSettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-05T15:14:47.851Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ApplicationContext.cs",
-              "DocumentMoniker": "C:\\Users\\vladk\\Desktop\\ASProject\\DataBase\\ApplicationContext.cs",
-              "RelativeDocumentMoniker": "DataBase\\ApplicationContext.cs",
-              "ToolTip": "C:\\Users\\vladk\\Desktop\\ASProject\\DataBase\\ApplicationContext.cs",
-              "RelativeToolTip": "DataBase\\ApplicationContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Title": "HomePageController.cs",
+              "DocumentMoniker": "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\Controllers\\HomePageController.cs",
+              "RelativeDocumentMoniker": "Clicker\\Controllers\\HomePageController.cs",
+              "ToolTip": "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\Controllers\\HomePageController.cs",
+              "RelativeToolTip": "Clicker\\Controllers\\HomePageController.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAABBwGkAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-05T15:15:16.657Z"
+              "WhenOpened": "2024-08-08T05:20:59.695Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "libman.json",
-              "DocumentMoniker": "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\libman.json",
-              "RelativeDocumentMoniker": "Clicker\\libman.json",
-              "ToolTip": "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\libman.json",
-              "RelativeToolTip": "Clicker\\libman.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-04T15:11:48.822Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\appsettings.json",
-              "RelativeDocumentMoniker": "Clicker\\appsettings.json",
-              "ToolTip": "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\appsettings.json",
-              "RelativeToolTip": "Clicker\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-04T15:11:45.096Z"
+              "DocumentIndex": 5,
+              "Title": "RegisterForm.cshtml",
+              "DocumentMoniker": "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\Views\\HomePage\\RegisterForm.cshtml",
+              "RelativeDocumentMoniker": "Clicker\\Views\\HomePage\\RegisterForm.cshtml",
+              "ToolTip": "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\Views\\HomePage\\RegisterForm.cshtml",
+              "RelativeToolTip": "Clicker\\Views\\HomePage\\RegisterForm.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-08T04:52:08.078Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Startup.cs",
-              "DocumentMoniker": "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\Startup.cs",
-              "RelativeDocumentMoniker": "Clicker\\Startup.cs",
-              "ToolTip": "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\Startup.cs",
-              "RelativeToolTip": "Clicker\\Startup.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAUwA0AAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-29T15:04:21.185Z"
+              "Title": "LoginForm.cshtml",
+              "DocumentMoniker": "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\Views\\HomePage\\LoginForm.cshtml",
+              "RelativeDocumentMoniker": "Clicker\\Views\\HomePage\\LoginForm.cshtml",
+              "ToolTip": "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\Views\\HomePage\\LoginForm.cshtml",
+              "RelativeToolTip": "Clicker\\Views\\HomePage\\LoginForm.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-08T04:52:00.421Z",
+              "EditorCaption": ""
             }
           ]
         }

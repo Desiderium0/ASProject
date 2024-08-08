@@ -1,0 +1,19 @@
+﻿@model ContentViewModel
+<main>
+    <h1 style="background-color: red">Паблик</h1>
+    <form action="/" method="post">
+        <div style="background-color: gray">
+            <div style="background-color: blue">
+                <label asp-for="Title"></label>
+                <input asp-for="Title">
+                <span asp-validation-for="Title"></span>
+            </div>
+            <div style="background-color: orange">
+                <label asp-for="Content"></label>
+                <textarea rows="5" cols="33" asp-for="Content">Напишите тему для обсуждения</textarea>
+                <span asp-validation-for="Content"></span>
+            </div>
+        </div>
+        <button class="btn btn-outline-primary">Отправить</button>
+    </form>
+</main>

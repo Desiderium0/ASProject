@@ -549,8 +549,20 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
       "Id": "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\wwwroot\\img\\Mountains.jpg",
+      "PackagePath": "staticwebassets\\img\\Mountains.jpg"
+    },
+    {
+      "Id": "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\wwwroot\\img\\ref.jpeg",
+      "PackagePath": "staticwebassets\\img\\ref.jpeg"
     },
     {
       "Id": "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\wwwroot\\js\\site.js",

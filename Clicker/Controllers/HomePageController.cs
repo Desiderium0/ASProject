@@ -11,110 +11,118 @@ using System.ComponentModel;
 
 namespace Clicker.Controllers
 {
-    public class HomePageController : Controller
-    {
-        private ApplicationContext _dataBase = null!;
+	public class HomePageController : Controller
+	{
+		private ApplicationContext _dataBase = null!;
 
-        #region FormRendering
-        public IActionResult RegisterForm()
-        {
-            return View();
-        }
+		#region FormRendering 
+		public IActionResult ContentManager()
+		{
+			return View();
+		}
 
-        public IActionResult LoginForm()
-        {
-            return View();
-        }
-        public IActionResult Home(LoginViewModel registerModel)
-        {
-            using (_dataBase = new ApplicationContext())
-            {
-                registerModel.Users = _dataBase.Users.ToList();
-                return View(registerModel);
-            }
-        }
-        #endregion
+		public IActionResult RegisterForm()
+		{
+			return View();
+		}
 
-        #region Actions
-        [HttpPost]
-        public IActionResult GetUser(LoginViewModel loginModel) 
-        {
-            using (_dataBase = new ApplicationContext())
-            {
-                var list = _dataBase.Users
-                    .Select(x => new { x.Login, x.Password })
-                    .ToList();
+		public IActionResult LoginForm()
+		{
+			return View();
+		}
+		public IActionResult Home(LoginViewModel loginModel)
+		{
+			using (_dataBase = new ApplicationContext())
+			{
+				loginModel.Users = _dataBase.Users.ToList();
+				return View(loginModel);
+			}
+		}
+		#endregion
 
-                foreach (var data in list)
-                {
-                    if (data.Password == loginModel.Password
-                        && data.Login == loginModel.Login)
-                    {
-                        return View("Home", UploadTable(loginModel));
-                    }
-                }
-            }
-            return View("LoginForm");
-        }
+		#region Actions
+		[HttpPost]
+		public IActionResult LoginUser(LoginViewModel loginModel) 
+		{
+			using (_dataBase = new ApplicationContext())
+			{
+				if (ModelState.IsValid)
+				{
+					var list = _dataBase.Users
+						.Select(x => new { x.Login, x.Password })
+						.ToList();
 
-        [HttpPost]
-        public IActionResult CreateUser(RegisterViewModel registerModel)
-        {
-            using (_dataBase = new ApplicationContext())
-            {
-                _dataBase.Database.EnsureCreated();
-                if (ModelState.IsValid)
-                {
-                    var user = new User
-                    {
-                        Login = registerModel.Login,
-                        Password = registerModel.Password
-                    };
-                    _dataBase.Users.Add(user);
-                    _dataBase.SaveChanges();
-                    
-                    return View("Home", UploadTable(registerModel));
-                }
-                return View("RegisterForm");
-            }
-        }
+					foreach (var data in list)
+					{
+						if (data.Password == loginModel.Password
+							&& data.Login == loginModel.Login)
+						{
+							return View("Home", UploadTable(loginModel));
+						}
+					}
+				}
+			}
+			return View("LoginForm");
+		}
 
-        [HttpPost]
-        public IActionResult DeleteUsers(RegisterViewModel registerModel)
-        {
-            using (_dataBase = new ApplicationContext())
-            {
-                foreach (var item in _dataBase.Users)
-                {
-                    _dataBase.Remove(item);
-                }
-                _dataBase.SaveChanges();
-            }
-            return View("Home", registerModel);
+		[HttpPost]
+		public IActionResult CreateUser(RegisterViewModel registerModel)
+		{
+			using (_dataBase = new ApplicationContext())
+			{
+				_dataBase.Database.EnsureCreated();
+				if (ModelState.IsValid)
+				{
+					var user = new User
+					{
+						Login = registerModel.Login,
+						Password = registerModel.Password
+					};
+					_dataBase.Users.Add(user);
+					_dataBase.SaveChanges();
+					
+					return View("Home", UploadTable(registerModel));
+				}
+				return View("RegisterForm");
+			}
+		}
 
-        }
-        #endregion
+		[HttpPost]
+		public IActionResult DeleteUsers(RegisterViewModel registerModel)
+		{
+			using (_dataBase = new ApplicationContext())
+			{
+				foreach (var item in _dataBase.Users)
+				{
+					_dataBase.Remove(item);
+				}
+				_dataBase.SaveChanges();
+			}
+			return View("Home", registerModel);
 
-        #region Methods
-        [Description("Метод для заполнения таблицы, обработкой моделью Login")]
-        public LoginViewModel UploadTable(LoginViewModel loginModel)
-        {
-            using (_dataBase = new ApplicationContext())
-            {
-                loginModel.Users = _dataBase.Users.ToList();
-                return loginModel;
-            }
-        }
+		}
+		#endregion
 
-        [Description("Метод для заполнения таблицы, обработкой моделью Register")]
-        public RegisterViewModel UploadTable(RegisterViewModel registerModel)
-        {
-            using (_dataBase = new ApplicationContext())
-            {
-                registerModel.Users = _dataBase.Users.ToList();
-                return registerModel;
-            }
-        }
-        #endregion
-    }
+		#region Methods
+		[Description("Метод для заполнения таблицы, обработкой моделью Login")]
+		public LoginViewModel UploadTable(LoginViewModel loginModel)
+		{
+			using (_dataBase = new ApplicationContext())
+			{
+				loginModel.Users = _dataBase.Users.ToList();
+				return loginModel;
+			}
+		}
+
+		[Description("Метод для заполнения таблицы, обработкой моделью Register")]
+		public RegisterViewModel UploadTable(RegisterViewModel registerModel)
+		{
+			using (_dataBase = new ApplicationContext())
+			{
+				registerModel.Users = _dataBase.Users.ToList();
+				return registerModel;
+			}
+		}
+		#endregion
+	}
 }
