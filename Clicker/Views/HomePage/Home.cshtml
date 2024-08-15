@@ -10,7 +10,8 @@
                 <tr>
                     <th align="center">ID пользователя</th>
                     <th align="center">Логин</th>
-                    <th align="center">Пароль</th>
+                    <th align="center">Пароль Хэш</th>
+                    <th align="center">Соль</th>
                 </tr>
             </thead>
             <tbody>
@@ -22,6 +23,7 @@
                             <td align="center">@user.Id</td>
                             <td align="center">@user.Login</td>
                             <td align="center">@user.Password</td>
+                            <td align="center">@user.Salt</td>
                         </tr>
                     }
                 }

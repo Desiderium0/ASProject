@@ -1,6 +1,8 @@
 ﻿using Clicker.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Linq;
+using Microsoft.AspNetCore.Cryptography.KeyDerivation;
+using System.Security.Cryptography;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -8,6 +10,9 @@ using System.Diagnostics;
 using System.Threading.Tasks;
 using DataBase;
 using System.ComponentModel;
+using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+using System.Text;
 
 namespace Clicker.Controllers
 {
@@ -48,15 +53,27 @@ namespace Clicker.Controllers
 			{
 				if (ModelState.IsValid)
 				{
+					
 					var list = _dataBase.Users
-						.Select(x => new { x.Login, x.Password })
+						.Select(x => new { x.Login, x.Password, x.Salt })
 						.ToList();
 
 					foreach (var data in list)
 					{
-						if (data.Password == loginModel.Password
+						byte[] storedHashBytes = Convert.FromBase64String(data.Password);
+						byte[] saltBytes = Convert.FromBase64String(data.Salt);
+
+						string password = Convert.ToBase64String(KeyDerivation.Pbkdf2(
+							password: loginModel.Password!,
+							salt: saltBytes,
+							prf: KeyDerivationPrf.HMACSHA256,
+							iterationCount: 100000,
+							numBytesRequested: 256 / 8)
+						);
+
+						if (password == Convert.ToBase64String(storedHashBytes)
 							&& data.Login == loginModel.Login)
-						{
+						{ 
 							return View("Home", UploadTable(loginModel));
 						}
 					}
@@ -68,15 +85,22 @@ namespace Clicker.Controllers
 		[HttpPost]
 		public IActionResult CreateUser(RegisterViewModel registerModel)
 		{
+			byte[] salt = RandomNumberGenerator.GetBytes(128 / 8);
 			using (_dataBase = new ApplicationContext())
 			{
 				_dataBase.Database.EnsureCreated();
 				if (ModelState.IsValid)
-				{
+				{	
 					var user = new User
 					{
+						Salt = Convert.ToBase64String(salt),
 						Login = registerModel.Login,
-						Password = registerModel.Password
+						Password = Convert.ToBase64String(KeyDerivation.Pbkdf2(
+							password: registerModel.Password!,
+							salt: salt,
+							prf: KeyDerivationPrf.HMACSHA256,
+							iterationCount: 100000,
+							numBytesRequested: 256 / 8))
 					};
 					_dataBase.Users.Add(user);
 					_dataBase.SaveChanges();
