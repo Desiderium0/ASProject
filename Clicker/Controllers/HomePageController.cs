@@ -3,28 +3,17 @@ using Microsoft.AspNetCore.Mvc;
 using System.Linq;
 using Microsoft.AspNetCore.Cryptography.KeyDerivation;
 using System.Security.Cryptography;
-using Microsoft.Extensions.Logging;
 using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Threading.Tasks;
 using DataBase;
 using System.ComponentModel;
-using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages;
-using static System.Runtime.InteropServices.JavaScript.JSType;
-using System.Text;
 
 namespace Clicker.Controllers
 {
-	public class HomePageController : Controller
+    public class HomePageController : Controller
 	{
 		private ApplicationContext _dataBase = null!;
 
 		#region FormRendering 
-		public IActionResult ContentManager()
-		{
-			return View();
-		}
 
 		public IActionResult RegisterForm()
 		{
@@ -34,6 +23,15 @@ namespace Clicker.Controllers
 		public IActionResult LoginForm()
 		{
 			return View();
+		}
+
+		public IActionResult ContentManager(ContentViewModel contentModel)
+		{
+			using (_dataBase = new ApplicationContext())
+			{
+                contentModel.Posts = _dataBase.Posts.ToList();
+				return View(contentModel);
+			}
 		}
 		public IActionResult Home(LoginViewModel loginModel)
 		{
@@ -53,14 +51,13 @@ namespace Clicker.Controllers
 			{
 				if (ModelState.IsValid)
 				{
-					
 					var list = _dataBase.Users
 						.Select(x => new { x.Login, x.Password, x.Salt })
 						.ToList();
 
 					foreach (var data in list)
 					{
-						byte[] storedHashBytes = Convert.FromBase64String(data.Password);
+						byte[] storedHashBytes = Convert.FromBase64String(data.Password); //вынести в отдельный метод
 						byte[] saltBytes = Convert.FromBase64String(data.Salt);
 
 						string password = Convert.ToBase64String(KeyDerivation.Pbkdf2(
@@ -93,7 +90,7 @@ namespace Clicker.Controllers
 				{	
 					var user = new User
 					{
-						Salt = Convert.ToBase64String(salt),
+						Salt = Convert.ToBase64String(salt),                //вынести в отдельный метод
 						Login = registerModel.Login,
 						Password = Convert.ToBase64String(KeyDerivation.Pbkdf2(
 							password: registerModel.Password!,
@@ -117,14 +114,34 @@ namespace Clicker.Controllers
 			using (_dataBase = new ApplicationContext())
 			{
 				foreach (var item in _dataBase.Users)
-				{
+				{ 
 					_dataBase.Remove(item);
 				}
 				_dataBase.SaveChanges();
 			}
 			return View("Home", registerModel);
-
 		}
+
+		public IActionResult CreatePost(ContentViewModel contentModel)
+		{
+			using (_dataBase = new ApplicationContext())
+			{
+				if (ModelState.IsValid)
+				{
+					var post = new Post
+					{
+						Name = contentModel.Title,
+						Content = contentModel.Content,
+						Author = contentModel.Author,
+						TimeCreated = DateTime.Now
+					};
+					_dataBase.Posts.Add(post);
+                    _dataBase.SaveChanges();
+                }
+                return View("ContentManager", UploadTable(contentModel));
+            }   
+		}
+
 		#endregion
 
 		#region Methods
@@ -147,6 +164,15 @@ namespace Clicker.Controllers
 				return registerModel;
 			}
 		}
-		#endregion
-	}
+
+        public ContentViewModel UploadTable(ContentViewModel contentModel)
+        {
+            using (_dataBase = new ApplicationContext())
+            {
+                contentModel.Posts = _dataBase.Posts.ToList();
+                return contentModel;
+            }
+        }
+        #endregion
+    }
 }

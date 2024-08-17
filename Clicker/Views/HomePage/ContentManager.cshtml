@@ -1,7 +1,19 @@
 ﻿@model ContentViewModel
+
 <main>
     <h1>Паблик</h1>
-    <form action="/" method="post">
+    @if (Model.Posts != null)
+    {
+        foreach (var post in Model.Posts)
+        {
+            <div style="border: solid 1px; ">
+                @post.Author
+                <p>@post.Name</p>
+                <p>@post.Content</p>
+            </div>
+        }
+     }
+    <form asp-controller="HomePage" method="post">
         <div>
             <div>
                 <label asp-for="Title"></label>
@@ -9,11 +21,15 @@
                 <span asp-validation-for="Title"></span>
             </div>
             <div>
+                <label asp-for="Author"></label>
+                <input asp-for="Author">
+            </div>
+            <div>
                 <label asp-for="Content"></label>
-                <textarea rows="5" cols="33" asp-for="Content">Напишите тему для обсуждения</textarea>
+                <textarea rows="5" cols="33" placeholder="123" asp-for ="Content">Напишите тему для обсуждения</textarea>
                 <span asp-validation-for="Content"></span>
             </div>
-            <button class="btn btn-outline-primary">Отправить</button> 
+            <button class="btn btn-outline-primary" asp-controller="HomePage" asp-action="CreatePost">Отправить</button>
         </div>
     </form>
 </main>

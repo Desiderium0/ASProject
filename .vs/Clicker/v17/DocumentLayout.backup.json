@@ -1,7 +1,44 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\vladk\\Desktop\\ASProject\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|c:\\users\\vladk\\desktop\\asproject\\clicker\\views\\homepage\\contentmanager.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|solutionrelative:clicker\\views\\homepage\\contentmanager.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|c:\\users\\vladk\\desktop\\asproject\\clicker\\views\\homepage\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|solutionrelative:clicker\\views\\homepage\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|c:\\users\\vladk\\desktop\\asproject\\clicker\\controllers\\homepagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|solutionrelative:clicker\\controllers\\homepagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|c:\\users\\vladk\\desktop\\asproject\\clicker\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|solutionrelative:clicker\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|c:\\users\\vladk\\desktop\\asproject\\clicker\\models\\dataviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|solutionrelative:clicker\\models\\dataviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|c:\\users\\vladk\\desktop\\asproject\\clicker\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|solutionrelative:clicker\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|c:\\users\\vladk\\desktop\\asproject\\clicker\\models\\contentviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|solutionrelative:clicker\\models\\contentviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|c:\\users\\vladk\\desktop\\asproject\\clicker\\views\\homepage\\loginform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|solutionrelative:clicker\\views\\homepage\\loginform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22B3505C-B4F0-4610-A3B5-4D5D609EE32A}|DataBase\\DataBase.csproj|c:\\users\\vladk\\desktop\\asproject\\database\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22B3505C-B4F0-4610-A3B5-4D5D609EE32A}|DataBase\\DataBase.csproj|solutionrelative:database\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +46,155 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ContentViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\Models\\ContentViewModel.cs",
+              "RelativeDocumentMoniker": "Clicker\\Models\\ContentViewModel.cs",
+              "ToolTip": "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\Models\\ContentViewModel.cs",
+              "RelativeToolTip": "Clicker\\Models\\ContentViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T11:18:32.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\Models\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "Clicker\\Models\\RegisterViewModel.cs",
+              "ToolTip": "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\Models\\RegisterViewModel.cs",
+              "RelativeToolTip": "Clicker\\Models\\RegisterViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T11:18:28.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DataViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\Models\\DataViewModel.cs",
+              "RelativeDocumentMoniker": "Clicker\\Models\\DataViewModel.cs",
+              "ToolTip": "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\Models\\DataViewModel.cs",
+              "RelativeToolTip": "Clicker\\Models\\DataViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T08:19:01.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\Models\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "Clicker\\Models\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\Models\\LoginViewModel.cs",
+              "RelativeToolTip": "Clicker\\Models\\LoginViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T08:18:56.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomePageController.cs",
+              "DocumentMoniker": "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\Controllers\\HomePageController.cs",
+              "RelativeDocumentMoniker": "Clicker\\Controllers\\HomePageController.cs",
+              "ToolTip": "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\Controllers\\HomePageController.cs",
+              "RelativeToolTip": "Clicker\\Controllers\\HomePageController.cs",
+              "ViewState": "AgIAAHcAAAAAAAAAAAAAAIwAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T06:28:59.284Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginForm.cshtml",
+              "DocumentMoniker": "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\Views\\HomePage\\LoginForm.cshtml",
+              "RelativeDocumentMoniker": "Clicker\\Views\\HomePage\\LoginForm.cshtml",
+              "ToolTip": "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\Views\\HomePage\\LoginForm.cshtml",
+              "RelativeToolTip": "Clicker\\Views\\HomePage\\LoginForm.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-17T07:52:52.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Home.cshtml",
+              "DocumentMoniker": "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\Views\\HomePage\\Home.cshtml",
+              "RelativeDocumentMoniker": "Clicker\\Views\\HomePage\\Home.cshtml",
+              "ToolTip": "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\Views\\HomePage\\Home.cshtml",
+              "RelativeToolTip": "Clicker\\Views\\HomePage\\Home.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-17T06:35:05.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ContentManager.cshtml",
+              "DocumentMoniker": "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\Views\\HomePage\\ContentManager.cshtml",
+              "RelativeDocumentMoniker": "Clicker\\Views\\HomePage\\ContentManager.cshtml",
+              "ToolTip": "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\Views\\HomePage\\ContentManager.cshtml",
+              "RelativeToolTip": "Clicker\\Views\\HomePage\\ContentManager.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-17T06:21:59.526Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "5b09757b-0942-47cf-80b9-71f837ca4cf2",
+        "Display": 1,
+        "X": 105,
+        "Y": 88,
+        "Width": 1263,
+        "Height": 783,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Post.cs",
+              "DocumentMoniker": "C:\\Users\\vladk\\Desktop\\ASProject\\DataBase\\Post.cs",
+              "RelativeDocumentMoniker": "DataBase\\Post.cs",
+              "ToolTip": "C:\\Users\\vladk\\Desktop\\ASProject\\DataBase\\Post.cs",
+              "RelativeToolTip": "DataBase\\Post.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T06:24:01.944Z",
+              "EditorCaption": ""
             }
           ]
         }

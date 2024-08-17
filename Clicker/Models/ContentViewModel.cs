@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DataBase;
+using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace Clicker.Models
@@ -14,7 +16,12 @@ namespace Clicker.Models
         [MinLength(10, ErrorMessage = "Тема должна быть не меньше 10 символов")]
         [MaxLength(500, ErrorMessage = "Тема должна быть не больше 500 символов")]
         public string Content { get; set; }
+
+        [Display(Name = "Автор")]
         public string Author { get; set; }
+
         public DateTime DateTime { get; set; }
+
+        public List<Post> Posts { get; set; }
     }
 }

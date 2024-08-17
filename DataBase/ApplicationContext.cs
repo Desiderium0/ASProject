@@ -1,11 +1,11 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace DataBase
 {
     public class ApplicationContext : DbContext
     {
         public DbSet<User> Users { get; set; } = null!;
+        public DbSet<Post> Posts { get; set; } = null!;
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

@@ -5,7 +5,7 @@ namespace Clicker.Models
 {
     public abstract class DataViewModel
     {
-        public int Id { get; set; }
+        public int Id { get; }
 
         public abstract string Login { get; set; }
 
