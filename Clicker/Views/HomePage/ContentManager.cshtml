@@ -7,9 +7,11 @@
         foreach (var post in Model.Posts)
         {
             <div style="border: solid 1px; ">
-                @post.Author
-                <p>@post.Name</p>
-                <p>@post.Content</p>
+                <h1>Автор: @post.Author</h1>
+                <p>Тема обсуждения: @post.Name</p>
+                <h3>Сообщение: @post.Content</h3>
+                <p>Время публикации: @post.TimeCreated</p>
+                <p>НОМЕР: @post.Id</p>
             </div>
         }
      }

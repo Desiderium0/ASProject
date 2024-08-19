@@ -6,10 +6,11 @@ using System.Security.Cryptography;
 using System;
 using DataBase;
 using System.ComponentModel;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Clicker.Controllers
 {
-    public class HomePageController : Controller
+	public class HomePageController : Controller
 	{
 		private ApplicationContext _dataBase = null!;
 
@@ -25,20 +26,32 @@ namespace Clicker.Controllers
 			return View();
 		}
 
-		public IActionResult ContentManager(ContentViewModel contentModel)
+		public IActionResult ContentManager()
 		{
 			using (_dataBase = new ApplicationContext())
 			{
-                contentModel.Posts = _dataBase.Posts.ToList();
-				return View(contentModel);
+				var posts = _dataBase.Posts.ToList();
+
+				ContentViewModel contentModel = new ContentViewModel
+				{
+					Posts = posts
+				};
+
+                return View(contentModel);
 			}
 		}
-		public IActionResult Home(LoginViewModel loginModel)
+		public IActionResult Home()
 		{
 			using (_dataBase = new ApplicationContext())
 			{
-				loginModel.Users = _dataBase.Users.ToList();
-				return View(loginModel);
+				var users = _dataBase.Users.ToList();
+
+				LoginViewModel loginModel = new LoginViewModel
+				{
+					Users = users 
+				};
+			
+                return View(loginModel);
 			}
 		}
 		#endregion
@@ -51,30 +64,13 @@ namespace Clicker.Controllers
 			{
 				if (ModelState.IsValid)
 				{
-					var list = _dataBase.Users
-						.Select(x => new { x.Login, x.Password, x.Salt })
-						.ToList();
+                    var user = _dataBase.Users.FirstOrDefault(x => x.Login == loginModel.Login);
 
-					foreach (var data in list)
-					{
-						byte[] storedHashBytes = Convert.FromBase64String(data.Password); //вынести в отдельный метод
-						byte[] saltBytes = Convert.FromBase64String(data.Salt);
-
-						string password = Convert.ToBase64String(KeyDerivation.Pbkdf2(
-							password: loginModel.Password!,
-							salt: saltBytes,
-							prf: KeyDerivationPrf.HMACSHA256,
-							iterationCount: 100000,
-							numBytesRequested: 256 / 8)
-						);
-
-						if (password == Convert.ToBase64String(storedHashBytes)
-							&& data.Login == loginModel.Login)
-						{ 
-							return View("Home", UploadTable(loginModel));
-						}
-					}
-				}
+                    if (user != null && VerifyPassword(loginModel.Password, user.PasswordHash, user.Salt))
+                    {
+                        return View("Home", UploadTable(loginModel));
+                    }
+                }
 			}
 			return View("LoginForm");
 		}
@@ -82,27 +78,22 @@ namespace Clicker.Controllers
 		[HttpPost]
 		public IActionResult CreateUser(RegisterViewModel registerModel)
 		{
-			byte[] salt = RandomNumberGenerator.GetBytes(128 / 8);
 			using (_dataBase = new ApplicationContext())
 			{
 				_dataBase.Database.EnsureCreated();
 				if (ModelState.IsValid)
-				{	
-					var user = new User
-					{
-						Salt = Convert.ToBase64String(salt),                //вынести в отдельный метод
-						Login = registerModel.Login,
-						Password = Convert.ToBase64String(KeyDerivation.Pbkdf2(
-							password: registerModel.Password!,
-							salt: salt,
-							prf: KeyDerivationPrf.HMACSHA256,
-							iterationCount: 100000,
-							numBytesRequested: 256 / 8))
-					};
-					_dataBase.Users.Add(user);
+				{
+					var (salt, passwordHash) = GenerateSaltAndPasswordHash(registerModel.Password);
+                    var user = new User
+                    {
+                        Salt = salt,
+                        Login = registerModel.Login,
+                        PasswordHash = passwordHash
+                    };
+                    _dataBase.Users.Add(user);
 					_dataBase.SaveChanges();
 					
-					return View("Home", UploadTable(registerModel));
+					return RedirectToAction("Home"); 
 				}
 				return View("RegisterForm");
 			}
@@ -122,7 +113,8 @@ namespace Clicker.Controllers
 			return View("Home", registerModel);
 		}
 
-		public IActionResult CreatePost(ContentViewModel contentModel)
+        [HttpPost]
+        public IActionResult CreatePost(ContentViewModel contentModel)
 		{
 			using (_dataBase = new ApplicationContext())
 			{
@@ -136,17 +128,19 @@ namespace Clicker.Controllers
 						TimeCreated = DateTime.Now
 					};
 					_dataBase.Posts.Add(post);
-                    _dataBase.SaveChanges();
+					_dataBase.SaveChanges();
+
+                    return RedirectToAction("ContentManager");
                 }
-                return View("ContentManager", UploadTable(contentModel));
-            }   
+				return View("ContentManager", UploadTable(contentModel));
+			}   
 		}
 
 		#endregion
 
 		#region Methods
-		[Description("Метод для заполнения таблицы, обработкой моделью Login")]
-		public LoginViewModel UploadTable(LoginViewModel loginModel)
+		[Description("Заполняет таблицу данными выходя из формы авторизации")]
+        private LoginViewModel UploadTable(LoginViewModel loginModel)
 		{
 			using (_dataBase = new ApplicationContext())
 			{
@@ -155,8 +149,8 @@ namespace Clicker.Controllers
 			}
 		}
 
-		[Description("Метод для заполнения таблицы, обработкой моделью Register")]
-		public RegisterViewModel UploadTable(RegisterViewModel registerModel)
+		[Description("Заполняет таблицу данными выходя из формы регистрации")]
+        private RegisterViewModel UploadTable(RegisterViewModel registerModel)
 		{
 			using (_dataBase = new ApplicationContext())
 			{
@@ -165,14 +159,45 @@ namespace Clicker.Controllers
 			}
 		}
 
-        public ContentViewModel UploadTable(ContentViewModel contentModel)
+        [Description("Заполняет таблицу данными для постов")]
+        private ContentViewModel UploadTable(ContentViewModel contentModel)
+		{
+			using (_dataBase = new ApplicationContext())
+			{
+				contentModel.Posts = _dataBase.Posts.ToList();
+				return contentModel;
+			}
+		}
+
+        private bool VerifyPassword(string password, byte[] storedHashBytes, byte[] saltBytes)
         {
-            using (_dataBase = new ApplicationContext())
-            {
-                contentModel.Posts = _dataBase.Posts.ToList();
-                return contentModel;
-            }
+            string hashedPassword = Convert.ToBase64String(KeyDerivation.Pbkdf2(
+                password: password,
+                salt: saltBytes,
+                prf: KeyDerivationPrf.HMACSHA256,
+                iterationCount: 100000,
+                numBytesRequested: 256 / 8
+            ));
+
+            return hashedPassword == Convert.ToBase64String(storedHashBytes);
         }
+
+        private (byte[], byte[]) GenerateSaltAndPasswordHash(string password)
+        {
+            byte[] salt = RandomNumberGenerator.GetBytes(128 / 8);
+
+            string passwordHash = Convert.ToBase64String(KeyDerivation.Pbkdf2(
+                password: password,
+                salt: salt,
+                prf: KeyDerivationPrf.HMACSHA256,
+                iterationCount: 100000,
+                numBytesRequested: 256 / 8));
+
+			byte[] bytesPasswordHash = Convert.FromBase64String(passwordHash);
+
+            return (salt, bytesPasswordHash);
+        }
+
         #endregion
     }
 }
