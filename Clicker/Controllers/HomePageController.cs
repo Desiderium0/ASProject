@@ -7,6 +7,7 @@ using System;
 using DataBase;
 using System.ComponentModel;
 using static System.Runtime.InteropServices.JavaScript.JSType;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace Clicker.Controllers
 {
@@ -45,10 +46,11 @@ namespace Clicker.Controllers
 			using (_dataBase = new ApplicationContext())
 			{
 				var users = _dataBase.Users.ToList();
+			//	var currentUser = _dataBase.Users.LastOrDefault(x => x.Login == );
 
 				LoginViewModel loginModel = new LoginViewModel
 				{
-					Users = users 
+					Users = users
 				};
 			
                 return View(loginModel);
@@ -81,7 +83,9 @@ namespace Clicker.Controllers
 			using (_dataBase = new ApplicationContext())
 			{
 				_dataBase.Database.EnsureCreated();
-				if (ModelState.IsValid)
+
+				var isDublicate = _dataBase.Users.FirstOrDefault(x => x.Login == registerModel.Login);
+				if (ModelState.IsValid && isDublicate == null)
 				{
 					var (salt, passwordHash) = GenerateSaltAndPasswordHash(registerModel.Password);
                     var user = new User
@@ -90,12 +94,22 @@ namespace Clicker.Controllers
                         Login = registerModel.Login,
                         PasswordHash = passwordHash
                     };
+                    
                     _dataBase.Users.Add(user);
 					_dataBase.SaveChanges();
 					
 					return RedirectToAction("Home"); 
 				}
-				return View("RegisterForm");
+				else if(isDublicate != null)
+				{
+					ModelState.AddModelError("Login", "Такой пользователь существует");
+					return View("RegisterForm");
+
+                }
+				else
+				{
+                    return View("RegisterForm");
+                }
 			}
 		}
 
@@ -108,8 +122,9 @@ namespace Clicker.Controllers
 				{ 
 					_dataBase.Remove(item);
 				}
-				_dataBase.SaveChanges();
-			}
+                _dataBase.UpdateRange();
+                _dataBase.SaveChanges();
+            }
 			return View("Home", registerModel);
 		}
 
