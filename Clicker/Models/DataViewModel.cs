@@ -12,5 +12,7 @@ namespace Clicker.Models
         public abstract string Password { get; set; }
 
         public List<User> Users { get; set; }
+
+        public User CurrentUser { get; set; }
     }
 }
