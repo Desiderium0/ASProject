@@ -1,27 +1,29 @@
 @model LoginViewModel
 
-<body>
-	<div class="background">
-		<div class="second-background">
-			<form class="authorization" asp-controller="HomePage">
-				<div class="variants no-caret">
-					<a class="oranged">ВОЙТИ</a>
-					<a asp-action="RegisterForm">РЕГИСТРАЦИЯ</a>
-				</div>
-				<div class="inputs">
-					<input asp-for="Login" id="input__username" type="text" placeholder="Логин">
-					<span asp-validation-for="Login" class="span-danger form-text text-danger "></span>
-					<input asp-for="Password" id="input__password" type="password" placeholder="Пароль">
-					<span asp-validation-for="Password" class="span-danger form-text text-danger"></span>
-					<label class="no-caret" for="checkbox__keep-logged">
-						<input id="checkbox__keep-logged" type="checkbox"> Запомнить вход
-					</label>
-				</div>
-				<div class="buttons no-caret">
-					<button asp-action="LoginUser" id="button__login" type="submit">ВОЙТИ</button>
-					<a id="a__forgotten-password" asp-action="" target="_blank">Забыли пароль?</a>
-				</div>
-			</form>
-		</div>
+<div class="background">
+	<div class="second-background">
+		<form class="authorization" asp-controller="HomePage">
+			<div class="variants no-caret">
+				<a class="oranged">ВОЙТИ</a>
+				<a asp-action="RegisterForm">РЕГИСТРАЦИЯ</a>
+			</div>
+			<div class="inputs">
+				<input asp-for="Login" id="input__username" type="text" placeholder="Логин">
+				<span asp-validation-for="Login" class="span-danger form-text text-danger "></span>
+				<input asp-for="Password" id="input__password" type="password" placeholder="Пароль">
+				<span asp-validation-for="Password" class="span-danger form-text text-danger"></span>
+				<input id="checkbox__keep-logged" type="checkbox">
+				<label class="no-caret" for="checkbox__keep-logged">
+					<div class="toggle-border">
+						<div class="toggle-inner"></div>
+					</div>
+					Запомнить вход
+				</label>
+			</div>
+			<div class="buttons no-caret">
+				<button asp-action="LoginUser" id="button__login" type="submit">ВОЙТИ</button>
+				<a id="a__forgotten-password" asp-action="" target="_blank">Забыли пароль?</a>
+			</div>
+		</form>
 	</div>
-</body>
+</div>
