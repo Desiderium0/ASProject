@@ -28,3 +28,18 @@ G:\Жесткий диск\ВУЗ ИГУ\1 КУРС\ВЕБ-ТЕХНОЛОГИИ\
 G:\Жесткий диск\ВУЗ ИГУ\1 КУРС\ВЕБ-ТЕХНОЛОГИИ\Повторение\ASProject\DataBase\obj\Release\net8.0\DataBase.pdb
 G:\Жесткий диск\ВУЗ ИГУ\1 КУРС\ВЕБ-ТЕХНОЛОГИИ\Повторение\ASProject\DataBase\obj\Release\net8.0\DataBase.genruntimeconfig.cache
 G:\Жесткий диск\ВУЗ ИГУ\1 КУРС\ВЕБ-ТЕХНОЛОГИИ\Повторение\ASProject\DataBase\obj\Release\net8.0\ref\DataBase.dll
+C:\Users\Desiderium HCS\Desktop\ASProject\DataBase\bin\Release\net8.0\DataBase.deps.json
+C:\Users\Desiderium HCS\Desktop\ASProject\DataBase\bin\Release\net8.0\DataBase.runtimeconfig.json
+C:\Users\Desiderium HCS\Desktop\ASProject\DataBase\bin\Release\net8.0\DataBase.dll
+C:\Users\Desiderium HCS\Desktop\ASProject\DataBase\bin\Release\net8.0\DataBase.pdb
+C:\Users\Desiderium HCS\Desktop\ASProject\DataBase\obj\Release\net8.0\DataBase.csproj.AssemblyReference.cache
+C:\Users\Desiderium HCS\Desktop\ASProject\DataBase\obj\Release\net8.0\DataBase.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Desiderium HCS\Desktop\ASProject\DataBase\obj\Release\net8.0\DataBase.AssemblyInfoInputs.cache
+C:\Users\Desiderium HCS\Desktop\ASProject\DataBase\obj\Release\net8.0\DataBase.AssemblyInfo.cs
+C:\Users\Desiderium HCS\Desktop\ASProject\DataBase\obj\Release\net8.0\DataBase.csproj.CoreCompileInputs.cache
+C:\Users\Desiderium HCS\Desktop\ASProject\DataBase\obj\Release\net8.0\DataBase.sourcelink.json
+C:\Users\Desiderium HCS\Desktop\ASProject\DataBase\obj\Release\net8.0\DataBase.dll
+C:\Users\Desiderium HCS\Desktop\ASProject\DataBase\obj\Release\net8.0\refint\DataBase.dll
+C:\Users\Desiderium HCS\Desktop\ASProject\DataBase\obj\Release\net8.0\DataBase.pdb
+C:\Users\Desiderium HCS\Desktop\ASProject\DataBase\obj\Release\net8.0\DataBase.genruntimeconfig.cache
+C:\Users\Desiderium HCS\Desktop\ASProject\DataBase\obj\Release\net8.0\ref\DataBase.dll

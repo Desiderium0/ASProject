@@ -8,6 +8,8 @@ using DataBase;
 using System.ComponentModel;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace Clicker.Controllers
 {
@@ -60,17 +62,17 @@ namespace Clicker.Controllers
 
 		#region Actions
 		[HttpPost]
-		public IActionResult LoginUser(LoginViewModel loginModel) 
+		public async Task<IActionResult> LoginUser(LoginViewModel loginModel) 
 		{
 			using (_dataBase = new ApplicationContext())
 			{
 				if (ModelState.IsValid)
 				{
-                    var user = _dataBase.Users.FirstOrDefault(x => x.Login == loginModel.Login);
-
-                    if (user != null && VerifyPassword(loginModel.Password, user.PasswordHash, user.Salt))
+                    var user = await _dataBase.Users.FirstOrDefaultAsync(x => x.Login == loginModel.Login);
+					bool isCorrect = await VerifyPasswordAsync(loginModel.Password, user.PasswordHash, user.Salt);
+                    if (user != null && isCorrect)
                     {
-                        return View("Home", UploadTable(loginModel));
+                        return View("Home", UploadTableAsync(loginModel));
                     }
                 }
 			}
@@ -78,16 +80,16 @@ namespace Clicker.Controllers
 		}
 
 		[HttpPost]
-		public IActionResult CreateUser(RegisterViewModel registerModel)
+		public async Task<IActionResult> CreateUser(RegisterViewModel registerModel)
 		{
 			using (_dataBase = new ApplicationContext())
 			{
-				_dataBase.Database.EnsureCreated();
+				await _dataBase.Database.EnsureCreatedAsync();
 
-				var isDublicate = _dataBase.Users.FirstOrDefault(x => x.Login == registerModel.Login);
+				var isDublicate = await _dataBase.Users.FirstOrDefaultAsync(x => x.Login == registerModel.Login);
 				if (ModelState.IsValid && isDublicate == null)
 				{
-					var (salt, passwordHash) = GenerateSaltAndPasswordHash(registerModel.Password);
+					var (salt, passwordHash) = await GenerateSaltAndPasswordHashAsync(registerModel.Password);
                     var user = new User
                     {
                         Salt = salt,
@@ -95,8 +97,8 @@ namespace Clicker.Controllers
                         PasswordHash = passwordHash
                     };
                     
-                    _dataBase.Users.Add(user);
-					_dataBase.SaveChanges();
+                    await _dataBase.Users.AddAsync(user);
+                    await _dataBase.SaveChangesAsync();
 					
 					return RedirectToAction("Home"); 
 				}
@@ -104,7 +106,6 @@ namespace Clicker.Controllers
 				{
 					ModelState.AddModelError("Login", "Такой пользователь существует");
 					return View("RegisterForm");
-
                 }
 				else
 				{
@@ -114,7 +115,7 @@ namespace Clicker.Controllers
 		}
 
 		[HttpPost]
-		public IActionResult DeleteUsers(RegisterViewModel registerModel)
+		public IActionResult DeleteUsers(RegisterViewModel registerModel)              //ТЕСТОВЫЙ метод, через время удалю (АСИНХРОННОСТИ НЕ БУДЕТ)
 		{
 			using (_dataBase = new ApplicationContext())
 			{
@@ -129,7 +130,7 @@ namespace Clicker.Controllers
 		}
 
         [HttpPost]
-        public IActionResult CreatePost(ContentViewModel contentModel)
+        public async Task<IActionResult> CreatePost(ContentViewModel contentModel)
 		{
 			using (_dataBase = new ApplicationContext())
 			{
@@ -142,12 +143,12 @@ namespace Clicker.Controllers
 						Author = contentModel.Author,
 						TimeCreated = DateTime.Now
 					};
-					_dataBase.Posts.Add(post);
-					_dataBase.SaveChanges();
+					await _dataBase.Posts.AddAsync(post);
+					await _dataBase.SaveChangesAsync();
 
                     return RedirectToAction("ContentManager");
                 }
-				return View("ContentManager", UploadTable(contentModel));
+				return View("ContentManager", await UploadTableAsync(contentModel));
 			}   
 		}
 
@@ -155,36 +156,36 @@ namespace Clicker.Controllers
 
 		#region Methods
 		[Description("Заполняет таблицу данными выходя из формы авторизации")]
-        private LoginViewModel UploadTable(LoginViewModel loginModel)
+        private async Task<LoginViewModel> UploadTableAsync(LoginViewModel loginModel)
 		{
 			using (_dataBase = new ApplicationContext())
 			{
-				loginModel.Users = _dataBase.Users.ToList();
+				loginModel.Users = await _dataBase.Users.ToListAsync();
 				return loginModel;
 			}
 		}
 
 		[Description("Заполняет таблицу данными выходя из формы регистрации")]
-        private RegisterViewModel UploadTable(RegisterViewModel registerModel)
+        private async Task<RegisterViewModel> UploadTableAsync(RegisterViewModel registerModel)
 		{
 			using (_dataBase = new ApplicationContext())
 			{
-				registerModel.Users = _dataBase.Users.ToList();
+				registerModel.Users = await _dataBase.Users.ToListAsync();
 				return registerModel;
 			}
 		}
 
         [Description("Заполняет таблицу данными для постов")]
-        private ContentViewModel UploadTable(ContentViewModel contentModel)
+        private async Task<ContentViewModel> UploadTableAsync(ContentViewModel contentModel)
 		{
 			using (_dataBase = new ApplicationContext())
 			{
-				contentModel.Posts = _dataBase.Posts.ToList();
+				contentModel.Posts = await _dataBase.Posts.ToListAsync();
 				return contentModel;
 			}
 		}
 
-        private bool VerifyPassword(string password, byte[] storedHashBytes, byte[] saltBytes)
+        private async Task<bool> VerifyPasswordAsync(string password, byte[] storedHashBytes, byte[] saltBytes)
         {
             string hashedPassword = Convert.ToBase64String(KeyDerivation.Pbkdf2(
                 password: password,
@@ -194,10 +195,10 @@ namespace Clicker.Controllers
                 numBytesRequested: 256 / 8
             ));
 
-            return hashedPassword == Convert.ToBase64String(storedHashBytes);
+            return await Task.FromResult(hashedPassword == Convert.ToBase64String(storedHashBytes));
         }
 
-        private (byte[], byte[]) GenerateSaltAndPasswordHash(string password)
+        private async Task<(byte[], byte[])> GenerateSaltAndPasswordHashAsync(string password)
         {
             byte[] salt = RandomNumberGenerator.GetBytes(128 / 8);
 
@@ -210,7 +211,7 @@ namespace Clicker.Controllers
 
 			byte[] bytesPasswordHash = Convert.FromBase64String(passwordHash);
 
-            return (salt, bytesPasswordHash);
+            return await Task.FromResult((salt, bytesPasswordHash));
         }
 
         #endregion
