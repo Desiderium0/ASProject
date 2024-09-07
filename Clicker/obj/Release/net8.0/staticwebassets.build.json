@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/SUfW+3Rw6J6To2L5S+nGjEN9KTOg+8iUFTVUYjzvK0=",
+  "Hash": "S0DS3K0cIpEbnTkNZR7OEzFowkb/BoZFqoflbdCVRsk=",
   "Source": "Clicker",
   "BasePath": "_content/Clicker",
   "Mode": "Default",
@@ -16,6 +16,44 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "G:\\Жесткий диск\\ВУЗ ИГУ\\1 КУРС\\ВЕБ-ТЕХНОЛОГИИ\\Повторение\\ASProject\\Clicker\\wwwroot\\_Layout+Home.html",
+      "SourceId": "Clicker",
+      "SourceType": "Discovered",
+      "ContentRoot": "G:\\Жесткий диск\\ВУЗ ИГУ\\1 КУРС\\ВЕБ-ТЕХНОЛОГИИ\\Повторение\\ASProject\\Clicker\\wwwroot\\",
+      "BasePath": "_content/Clicker",
+      "RelativePath": "_Layout+Home.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\_Layout+Home.html"
+    },
+    {
+      "Identity": "G:\\Жесткий диск\\ВУЗ ИГУ\\1 КУРС\\ВЕБ-ТЕХНОЛОГИИ\\Повторение\\ASProject\\Clicker\\wwwroot\\_Layout+LoginForm.html",
+      "SourceId": "Clicker",
+      "SourceType": "Discovered",
+      "ContentRoot": "G:\\Жесткий диск\\ВУЗ ИГУ\\1 КУРС\\ВЕБ-ТЕХНОЛОГИИ\\Повторение\\ASProject\\Clicker\\wwwroot\\",
+      "BasePath": "_content/Clicker",
+      "RelativePath": "_Layout+LoginForm.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\_Layout+LoginForm.html"
+    },
     {
       "Identity": "G:\\Жесткий диск\\ВУЗ ИГУ\\1 КУРС\\ВЕБ-ТЕХНОЛОГИИ\\Повторение\\ASProject\\Clicker\\wwwroot\\bootstrap\\css\\bootstrap.css",
       "SourceId": "Clicker",

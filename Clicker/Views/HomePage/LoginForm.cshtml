@@ -4,8 +4,8 @@
 	<div class="second-background">
 		<form class="authorization" asp-controller="HomePage">
 			<div class="variants no-caret">
-				<a class="oranged">ВОЙТИ</a>
-				<a asp-action="RegisterForm">РЕГИСТРАЦИЯ</a>
+				<a class="oranged f-a">ВОЙТИ</a>
+				<a asp-action="RegisterForm" class="f-a">РЕГИСТРАЦИЯ</a>
 			</div>
 			<div class="inputs">
 				<input asp-for="Login" id="input__username" type="text" placeholder="Логин">
@@ -21,7 +21,7 @@
 				</label>
 			</div>
 			<div class="buttons no-caret">
-				<button asp-action="LoginUser" id="button__login" type="submit">ВОЙТИ</button>
+				<button asp-action="LoginUser" id="button__login" id="button__enterance" type="submit">ВОЙТИ</button>
 				<a id="a__forgotten-password" asp-action="" target="_blank">Забыли пароль?</a>
 			</div>
 		</form>

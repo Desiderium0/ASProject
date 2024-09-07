@@ -1,53 +1,99 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
-        <link rel="stylesheet" href="css/site.css" />
-        <link rel="stylesheet" href="css/style.css" />
-        <title>@ViewData["Title"]</title>
-    </head>
-    <body><main>
-    <div>
-        <h1>Главная страница</h1>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="css/site.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/main-page.css" />
+    <title>@ViewData["Title"]</title>
+</head>
+
+<body><header>
+    <div class="div__header">
+        <div class="div__logos">
+            <img src="img/header/Logo ZZOK.png" alt="Logo ZZOK">
+            <img id="img__logo-text" src="img/header/Text ZZOK.png" alt="ZZOK">
+        </div>
+        <div class="div__main-buttons">
+            <a class="f-a" href="">Главная</a>
+            <a class="f-a" href="">Обсуждение</a>
+            <a class="f-a" href="">Вход</a>
+        </div>
     </div>
-    <div class="div-user-table d-flex flex-column align-items-end mt-3">
-        <table class="table table-dark table-striped align-middle" border="1">
-            <thead>
-                <tr>
-                    <th align="center">ID пользователя</th>
-                    <th align="center">Логин</th>
-                </tr>
-            </thead>
-            <tbody>
-                @if (Model.Users != null)
-                {
-                    @foreach (var user in Model.Users)
+</header>
+<main>
+    <div class="div__envelope">
+        <div class="div__content">
+            <h1 class="h1__main-page">Главная страница</h1>
+            <div class="div__user-table">
+                <h2 class="h2__title-table">Пользователи</h2>
+                <div class="div__envelope-table">
+                    <table class="table__users">
+                        <thead>
+                            <tr>
+                                <th>ID пользователя</th>
+                                <th>Логин</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!--@if (Model.Users != null)
                     {
-                        <tr>
-                            <td align="center">@user.Id</td>
-                            <td align="center">@user.Login</td>
-                        </tr>
-                    }
-                }
-            </tbody>
-        </table>
-        <form asp-controller="HomePage" asp-action="DeleteUsers" method="post">
-            <button type="submit" class="btn btn-danger">Удалить всех</button>
-        </form>
+                        @foreach (var user in Model.Users)
+                        {
+                            <tr>
+                                <td align="center">@user.Id</td>
+                                <td align="center">@user.Login</td>
+                            </tr>
+                        }
+                    }-->
+                            <tr>
+                                <td>1</td>
+                                <td>@user.Login</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>@user.Login</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>@user.Login</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>@user.Login</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>@user.Login</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>@user.Login</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <form asp-controller="HomePage" asp-action="DeleteUsers"
+                        method="post">
+                        <button type="submit" class="button__delete-everyone btn btn-danger">Удалить всех</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="d-flex flex-column align-items-end mt-3">
-        <form method="post" asp-controller="HomePage" asp-action="LoginForm">
-            <button type="submit" class="btn btn-primary">Войти</button>
-        </form>
-        <form method="post" asp-controller="HomePage" asp-action="RegisterForm">
-            <button type="submit" class="btn btn-primary">Регистрация</button>
-        </form>
-        <form method="post" asp-controller="HomePage" asp-action="ContentManager">
-            <button type="submit" class="btn btn-primary">Обсуждение</button>
-        </form>
+    <!--div class="d-flex flex-column align-items-end mt-3">
+            <form method="post" asp-controller="HomePage" asp-action="LoginForm">
+                <button type="submit" class="btn btn-primary">Войти</button>
+            </form>
+            <form method="post" asp-controller="HomePage" asp-action="RegisterForm">
+                <button type="submit" class="btn btn-primary">Регистрация</button>
+            </form>
+            <form method="post" asp-controller="HomePage" asp-action="ContentManager">
+                <button type="submit" class="btn btn-primary">Обсуждение</button>
+            </form>
+        </div-->
     </div>
-</main>
-</body>
+</main></body>
 </html>

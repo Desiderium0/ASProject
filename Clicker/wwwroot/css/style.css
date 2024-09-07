@@ -1,10 +1,26 @@
-html, body, p, a {
+@font-face {
+	font-family: "Gotham Pro";
+	src: url("../fonts/gothampro.ttf") format("truetype");
+}
+
+a {
 	margin: 0;
 	padding: 0;
 }
 
+.e-a {
+	text-decoration: none;
+	color: white;
+}
+
 button {
 	border-width: 0;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .oranged {
@@ -47,12 +63,6 @@ button {
 	height: 80%;
 }
 
-form {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
 .span-danger {
     margin-top: -2em;
 }
@@ -65,14 +75,14 @@ form {
 	height: 10%;
 }
 
-.variants a {
-	font-size: 16pt;
+.f-a {
+	font-size: 18pt;
 	color: white;
 	text-decoration-color: rgba(0, 0, 0, 0);
 	transition: text-decoration-color 0.25s;
 }
 
-.variants a:hover {
+.f-a:hover {
 	text-decoration-color: orange;
 }
 
