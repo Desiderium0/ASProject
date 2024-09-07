@@ -1,8 +1,12 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\vladk\\Desktop\\ASProject\\",
+  "WorkspaceRootPath": "G:\\\u0416\u0435\u0441\u0442\u043A\u0438\u0439 \u0434\u0438\u0441\u043A\\\u0412\u0423\u0417 \u0418\u0413\u0423\\1 \u041A\u0423\u0420\u0421\\\u0412\u0415\u0411-\u0422\u0415\u0425\u041D\u041E\u041B\u041E\u0413\u0418\u0418\\\u041F\u043E\u0432\u0442\u043E\u0440\u0435\u043D\u0438\u0435\\ASProject\\",
   "Documents": [
     {
+<<<<<<< HEAD
+      "AbsoluteMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|g:\\\u0436\u0435\u0441\u0442\u043A\u0438\u0439 \u0434\u0438\u0441\u043A\\\u0432\u0443\u0437 \u0438\u0433\u0443\\1 \u043A\u0443\u0440\u0441\\\u0432\u0435\u0431-\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438\\\u043F\u043E\u0432\u0442\u043E\u0440\u0435\u043D\u0438\u0435\\asproject\\clicker\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|solutionrelative:clicker\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+=======
       "AbsoluteMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|c:\\users\\vladk\\desktop\\asproject\\clicker\\views\\homepage\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|solutionrelative:clicker\\views\\homepage\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -33,10 +37,22 @@
     {
       "AbsoluteMoniker": "D:0:0:{22B3505C-B4F0-4610-A3B5-4D5D609EE32A}|DataBase\\DataBase.csproj|c:\\users\\vladk\\desktop\\asproject\\database\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{22B3505C-B4F0-4610-A3B5-4D5D609EE32A}|DataBase\\DataBase.csproj|solutionrelative:database\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> b1c89775814734677615ed27166e5dd07c7a3afe
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|c:\\users\\vladk\\desktop\\asproject\\clicker\\views\\homepage\\loginform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|g:\\\u0436\u0435\u0441\u0442\u043A\u0438\u0439 \u0434\u0438\u0441\u043A\\\u0432\u0443\u0437 \u0438\u0433\u0443\\1 \u043A\u0443\u0440\u0441\\\u0432\u0435\u0431-\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438\\\u043F\u043E\u0432\u0442\u043E\u0440\u0435\u043D\u0438\u0435\\asproject\\clicker\\views\\homepage\\loginform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|solutionrelative:clicker\\views\\homepage\\loginform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+<<<<<<< HEAD
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|g:\\\u0436\u0435\u0441\u0442\u043A\u0438\u0439 \u0434\u0438\u0441\u043A\\\u0432\u0443\u0437 \u0438\u0433\u0443\\1 \u043A\u0443\u0440\u0441\\\u0432\u0435\u0431-\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438\\\u043F\u043E\u0432\u0442\u043E\u0440\u0435\u043D\u0438\u0435\\asproject\\clicker\\views\\homepage\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|solutionrelative:clicker\\views\\homepage\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|g:\\\u0436\u0435\u0441\u0442\u043A\u0438\u0439 \u0434\u0438\u0441\u043A\\\u0432\u0443\u0437 \u0438\u0433\u0443\\1 \u043A\u0443\u0440\u0441\\\u0432\u0435\u0431-\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438\\\u043F\u043E\u0432\u0442\u043E\u0440\u0435\u043D\u0438\u0435\\asproject\\clicker\\views\\homepage\\contentmanager.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|solutionrelative:clicker\\views\\homepage\\contentmanager.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+=======
+>>>>>>> b1c89775814734677615ed27166e5dd07c7a3afe
     }
   ],
   "DocumentGroupContainers": [
@@ -45,6 +61,14 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
+<<<<<<< HEAD
+          "DockedWidth": 198,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+=======
           "DockedWidth": 171,
           "SelectedChildIndex": 5,
           "Children": [
@@ -129,22 +153,44 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-17T06:28:59.284Z",
               "EditorCaption": ""
+>>>>>>> b1c89775814734677615ed27166e5dd07c7a3afe
             }
           ]
         },
         {
+<<<<<<< HEAD
+          "DockedWidth": 202,
+=======
           "DockedWidth": 229,
+>>>>>>> b1c89775814734677615ed27166e5dd07c7a3afe
           "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "G:\\\u0416\u0435\u0441\u0442\u043A\u0438\u0439 \u0434\u0438\u0441\u043A\\\u0412\u0423\u0417 \u0418\u0413\u0423\\1 \u041A\u0423\u0420\u0421\\\u0412\u0415\u0411-\u0422\u0415\u0425\u041D\u041E\u041B\u041E\u0413\u0418\u0418\\\u041F\u043E\u0432\u0442\u043E\u0440\u0435\u043D\u0438\u0435\\ASProject\\Clicker\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Clicker\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "G:\\\u0416\u0435\u0441\u0442\u043A\u0438\u0439 \u0434\u0438\u0441\u043A\\\u0412\u0423\u0417 \u0418\u0413\u0423\\1 \u041A\u0423\u0420\u0421\\\u0412\u0415\u0411-\u0422\u0415\u0425\u041D\u041E\u041B\u041E\u0413\u0418\u0418\\\u041F\u043E\u0432\u0442\u043E\u0440\u0435\u043D\u0438\u0435\\ASProject\\Clicker\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Clicker\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-19T08:26:50.339Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "LoginForm.cshtml",
-              "DocumentMoniker": "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\Views\\HomePage\\LoginForm.cshtml",
+              "DocumentMoniker": "G:\\\u0416\u0435\u0441\u0442\u043A\u0438\u0439 \u0434\u0438\u0441\u043A\\\u0412\u0423\u0417 \u0418\u0413\u0423\\1 \u041A\u0423\u0420\u0421\\\u0412\u0415\u0411-\u0422\u0415\u0425\u041D\u041E\u041B\u041E\u0413\u0418\u0418\\\u041F\u043E\u0432\u0442\u043E\u0440\u0435\u043D\u0438\u0435\\ASProject\\Clicker\\Views\\HomePage\\LoginForm.cshtml",
               "RelativeDocumentMoniker": "Clicker\\Views\\HomePage\\LoginForm.cshtml",
-              "ToolTip": "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\Views\\HomePage\\LoginForm.cshtml",
+              "ToolTip": "G:\\\u0416\u0435\u0441\u0442\u043A\u0438\u0439 \u0434\u0438\u0441\u043A\\\u0412\u0423\u0417 \u0418\u0413\u0423\\1 \u041A\u0423\u0420\u0421\\\u0412\u0415\u0411-\u0422\u0415\u0425\u041D\u041E\u041B\u041E\u0413\u0418\u0418\\\u041F\u043E\u0432\u0442\u043E\u0440\u0435\u043D\u0438\u0435\\ASProject\\Clicker\\Views\\HomePage\\LoginForm.cshtml",
               "RelativeToolTip": "Clicker\\Views\\HomePage\\LoginForm.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAKAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-08-17T07:52:52.427Z"
             },
@@ -152,24 +198,36 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Home.cshtml",
-              "DocumentMoniker": "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\Views\\HomePage\\Home.cshtml",
+              "DocumentMoniker": "G:\\\u0416\u0435\u0441\u0442\u043A\u0438\u0439 \u0434\u0438\u0441\u043A\\\u0412\u0423\u0417 \u0418\u0413\u0423\\1 \u041A\u0423\u0420\u0421\\\u0412\u0415\u0411-\u0422\u0415\u0425\u041D\u041E\u041B\u041E\u0413\u0418\u0418\\\u041F\u043E\u0432\u0442\u043E\u0440\u0435\u043D\u0438\u0435\\ASProject\\Clicker\\Views\\HomePage\\Home.cshtml",
               "RelativeDocumentMoniker": "Clicker\\Views\\HomePage\\Home.cshtml",
-              "ToolTip": "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\Views\\HomePage\\Home.cshtml",
+              "ToolTip": "G:\\\u0416\u0435\u0441\u0442\u043A\u0438\u0439 \u0434\u0438\u0441\u043A\\\u0412\u0423\u0417 \u0418\u0413\u0423\\1 \u041A\u0423\u0420\u0421\\\u0412\u0415\u0411-\u0422\u0415\u0425\u041D\u041E\u041B\u041E\u0413\u0418\u0418\\\u041F\u043E\u0432\u0442\u043E\u0440\u0435\u043D\u0438\u0435\\ASProject\\Clicker\\Views\\HomePage\\Home.cshtml",
               "RelativeToolTip": "Clicker\\Views\\HomePage\\Home.cshtml",
+<<<<<<< HEAD
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+=======
               "ViewState": "AgIAABIAAAAAAAAAAAAowBYAAAAdAAAAAAAAAA==",
+>>>>>>> b1c89775814734677615ed27166e5dd07c7a3afe
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-08-17T06:35:05.186Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
+              "DocumentIndex": 3,
+=======
               "DocumentIndex": 1,
+>>>>>>> b1c89775814734677615ed27166e5dd07c7a3afe
               "Title": "ContentManager.cshtml",
-              "DocumentMoniker": "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\Views\\HomePage\\ContentManager.cshtml",
+              "DocumentMoniker": "G:\\\u0416\u0435\u0441\u0442\u043A\u0438\u0439 \u0434\u0438\u0441\u043A\\\u0412\u0423\u0417 \u0418\u0413\u0423\\1 \u041A\u0423\u0420\u0421\\\u0412\u0415\u0411-\u0422\u0415\u0425\u041D\u041E\u041B\u041E\u0413\u0418\u0418\\\u041F\u043E\u0432\u0442\u043E\u0440\u0435\u043D\u0438\u0435\\ASProject\\Clicker\\Views\\HomePage\\ContentManager.cshtml",
               "RelativeDocumentMoniker": "Clicker\\Views\\HomePage\\ContentManager.cshtml",
-              "ToolTip": "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\Views\\HomePage\\ContentManager.cshtml",
+              "ToolTip": "G:\\\u0416\u0435\u0441\u0442\u043A\u0438\u0439 \u0434\u0438\u0441\u043A\\\u0412\u0423\u0417 \u0418\u0413\u0423\\1 \u041A\u0423\u0420\u0421\\\u0412\u0415\u0411-\u0422\u0415\u0425\u041D\u041E\u041B\u041E\u0413\u0418\u0418\\\u041F\u043E\u0432\u0442\u043E\u0440\u0435\u043D\u0438\u0435\\ASProject\\Clicker\\Views\\HomePage\\ContentManager.cshtml",
               "RelativeToolTip": "Clicker\\Views\\HomePage\\ContentManager.cshtml",
+<<<<<<< HEAD
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+=======
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAnAAAAAAAAAA==",
+>>>>>>> b1c89775814734677615ed27166e5dd07c7a3afe
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-08-17T06:21:59.526Z",
               "EditorCaption": ""

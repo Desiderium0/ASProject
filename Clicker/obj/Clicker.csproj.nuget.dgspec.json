@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\Clicker.csproj": {}
+    "G:\\Жесткий диск\\ВУЗ ИГУ\\1 КУРС\\ВЕБ-ТЕХНОЛОГИИ\\Повторение\\ASProject\\Clicker\\Clicker.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\Clicker.csproj": {
+    "G:\\Жесткий диск\\ВУЗ ИГУ\\1 КУРС\\ВЕБ-ТЕХНОЛОГИИ\\Повторение\\ASProject\\Clicker\\Clicker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\Clicker.csproj",
+        "projectUniqueName": "G:\\Жесткий диск\\ВУЗ ИГУ\\1 КУРС\\ВЕБ-ТЕХНОЛОГИИ\\Повторение\\ASProject\\Clicker\\Clicker.csproj",
         "projectName": "Clicker",
-        "projectPath": "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\Clicker.csproj",
-        "packagesPath": "C:\\Users\\vladk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vladk\\Desktop\\ASProject\\Clicker\\obj\\",
+        "projectPath": "G:\\Жесткий диск\\ВУЗ ИГУ\\1 КУРС\\ВЕБ-ТЕХНОЛОГИИ\\Повторение\\ASProject\\Clicker\\Clicker.csproj",
+        "packagesPath": "C:\\Users\\Алексей\\.nuget\\packages\\",
+        "outputPath": "G:\\Жесткий диск\\ВУЗ ИГУ\\1 КУРС\\ВЕБ-ТЕХНОЛОГИИ\\Повторение\\ASProject\\Clicker\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\vladk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Алексей\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -29,8 +29,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\vladk\\Desktop\\ASProject\\DataBase\\DataBase.csproj": {
-                "projectPath": "C:\\Users\\vladk\\Desktop\\ASProject\\DataBase\\DataBase.csproj"
+              "G:\\Жесткий диск\\ВУЗ ИГУ\\1 КУРС\\ВЕБ-ТЕХНОЛОГИИ\\Повторение\\ASProject\\DataBase\\DataBase.csproj": {
+                "projectPath": "G:\\Жесткий диск\\ВУЗ ИГУ\\1 КУРС\\ВЕБ-ТЕХНОЛОГИИ\\Повторение\\ASProject\\DataBase\\DataBase.csproj"
               }
             }
           }
@@ -94,21 +94,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\vladk\\Desktop\\ASProject\\DataBase\\DataBase.csproj": {
+    "G:\\Жесткий диск\\ВУЗ ИГУ\\1 КУРС\\ВЕБ-ТЕХНОЛОГИИ\\Повторение\\ASProject\\DataBase\\DataBase.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vladk\\Desktop\\ASProject\\DataBase\\DataBase.csproj",
+        "projectUniqueName": "G:\\Жесткий диск\\ВУЗ ИГУ\\1 КУРС\\ВЕБ-ТЕХНОЛОГИИ\\Повторение\\ASProject\\DataBase\\DataBase.csproj",
         "projectName": "DataBase",
-        "projectPath": "C:\\Users\\vladk\\Desktop\\ASProject\\DataBase\\DataBase.csproj",
-        "packagesPath": "C:\\Users\\vladk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vladk\\Desktop\\ASProject\\DataBase\\obj\\",
+        "projectPath": "G:\\Жесткий диск\\ВУЗ ИГУ\\1 КУРС\\ВЕБ-ТЕХНОЛОГИИ\\Повторение\\ASProject\\DataBase\\DataBase.csproj",
+        "packagesPath": "C:\\Users\\Алексей\\.nuget\\packages\\",
+        "outputPath": "G:\\Жесткий диск\\ВУЗ ИГУ\\1 КУРС\\ВЕБ-ТЕХНОЛОГИИ\\Повторение\\ASProject\\DataBase\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\vladk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Алексей\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -171,7 +171,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
