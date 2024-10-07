@@ -1,8 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "G:\\\u0416\u0435\u0441\u0442\u043A\u0438\u0439 \u0434\u0438\u0441\u043A\\\u0412\u0423\u0417 \u0418\u0413\u0423\\1 \u041A\u0423\u0420\u0421\\\u0412\u0415\u0411-\u0422\u0415\u0425\u041D\u041E\u041B\u041E\u0413\u0418\u0418\\\u041F\u043E\u0432\u0442\u043E\u0440\u0435\u043D\u0438\u0435\\ASProject\\",
+  "WorkspaceRootPath": "C:\\Users\\Desiderium HCS\\Desktop\\ASProject\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|g:\\\u0436\u0435\u0441\u0442\u043A\u0438\u0439 \u0434\u0438\u0441\u043A\\\u0432\u0443\u0437 \u0438\u0433\u0443\\1 \u043A\u0443\u0440\u0441\\\u0432\u0435\u0431-\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438\\\u043F\u043E\u0432\u0442\u043E\u0440\u0435\u043D\u0438\u0435\\asproject\\clicker\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|solutionrelative:clicker\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -17,6 +18,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|g:\\\u0436\u0435\u0441\u0442\u043A\u0438\u0439 \u0434\u0438\u0441\u043A\\\u0432\u0443\u0437 \u0438\u0433\u0443\\1 \u043A\u0443\u0440\u0441\\\u0432\u0435\u0431-\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438\\\u043F\u043E\u0432\u0442\u043E\u0440\u0435\u043D\u0438\u0435\\asproject\\clicker\\views\\homepage\\contentmanager.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|solutionrelative:clicker\\views\\homepage\\contentmanager.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+=======
+      "AbsoluteMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|c:\\users\\desiderium hcs\\desktop\\asproject\\clicker\\controllers\\homepagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|solutionrelative:clicker\\controllers\\homepagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|c:\\users\\desiderium hcs\\desktop\\asproject\\clicker\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAEE70ED-2C48-4B22-88E9-88F37CFF5714}|Clicker\\Clicker.csproj|solutionrelative:clicker\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> b547e851aa222495380f7400c476eed34234da2f
     }
   ],
   "DocumentGroupContainers": [
@@ -25,6 +34,7 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
+<<<<<<< HEAD
           "DockedWidth": 198,
           "SelectedChildIndex": -1,
           "Children": [
@@ -35,15 +45,14 @@
           ]
         },
         {
+=======
+>>>>>>> b547e851aa222495380f7400c476eed34234da2f
           "DockedWidth": 202,
           "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 0,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "G:\\\u0416\u0435\u0441\u0442\u043A\u0438\u0439 \u0434\u0438\u0441\u043A\\\u0412\u0423\u0417 \u0418\u0413\u0423\\1 \u041A\u0423\u0420\u0421\\\u0412\u0415\u0411-\u0422\u0415\u0425\u041D\u041E\u041B\u041E\u0413\u0418\u0418\\\u041F\u043E\u0432\u0442\u043E\u0440\u0435\u043D\u0438\u0435\\ASProject\\Clicker\\Views\\Shared\\_Layout.cshtml",
@@ -53,10 +62,22 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-08-19T08:26:50.339Z",
+=======
+              "DocumentIndex": 1,
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Desiderium HCS\\Desktop\\ASProject\\Clicker\\Models\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "Clicker\\Models\\RegisterViewModel.cs",
+              "ToolTip": "C:\\Users\\Desiderium HCS\\Desktop\\ASProject\\Clicker\\Models\\RegisterViewModel.cs",
+              "RelativeToolTip": "Clicker\\Models\\RegisterViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-07T06:16:03.861Z",
+>>>>>>> b547e851aa222495380f7400c476eed34234da2f
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 1,
               "Title": "LoginForm.cshtml",
               "DocumentMoniker": "G:\\\u0416\u0435\u0441\u0442\u043A\u0438\u0439 \u0434\u0438\u0441\u043A\\\u0412\u0423\u0417 \u0418\u0413\u0423\\1 \u041A\u0423\u0420\u0421\\\u0412\u0415\u0411-\u0422\u0415\u0425\u041D\u041E\u041B\u041E\u0413\u0418\u0418\\\u041F\u043E\u0432\u0442\u043E\u0440\u0435\u043D\u0438\u0435\\ASProject\\Clicker\\Views\\HomePage\\LoginForm.cshtml",
@@ -90,6 +111,18 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-08-17T06:21:59.526Z"
+=======
+              "DocumentIndex": 0,
+              "Title": "HomePageController.cs",
+              "DocumentMoniker": "C:\\Users\\Desiderium HCS\\Desktop\\ASProject\\Clicker\\Controllers\\HomePageController.cs",
+              "RelativeDocumentMoniker": "Clicker\\Controllers\\HomePageController.cs",
+              "ToolTip": "C:\\Users\\Desiderium HCS\\Desktop\\ASProject\\Clicker\\Controllers\\HomePageController.cs",
+              "RelativeToolTip": "Clicker\\Controllers\\HomePageController.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAA2wEkAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-07T06:01:16.854Z",
+              "EditorCaption": ""
+>>>>>>> b547e851aa222495380f7400c476eed34234da2f
             }
           ]
         }
