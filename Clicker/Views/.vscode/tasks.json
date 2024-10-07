@@ -5,8 +5,8 @@
     "tasks": [
         {
             "label": "translate",
-            "type": "shell",
-            "command": "start exec"
-        }
-    ]
+            "type": "process",
+            "command": ".vscode/translate.bat",
+        },
+    ],
 }

@@ -1,0 +1,121 @@
+body {
+    font-family: "Gotham Pro";
+}
+
+.div__header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #2c2b2b;
+    height: 11.11%;
+}
+
+.div__logos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    width: 50%;
+}
+
+.div__logos img:first-child {
+    margin-right: 10%;
+}
+
+.div__main-buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+}
+
+.div__main-buttons a {
+    font-size: 18pt;
+}
+
+#img__logo-text {
+    height: 50%;
+}
+
+.h1__main-page {
+    font-size: 25pt;
+    font-weight: bold;
+    margin: 0;
+}
+
+.div__envelope {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.div__content {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    width: 60%; 
+}
+
+.div__user-table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #C9C6C66F;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.h2__title-table {
+    padding-top: 30px;
+    padding-left: 30px;
+    align-self: flex-start;
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+.div__envelope-table {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.table__users {
+    width: 100%;
+}
+
+.table__users thead tr th {
+    font-size: 18pt;
+}
+
+.table__users th, td {
+    text-indent: 15px;
+}
+
+.table__users tr td {
+    font-size: 16pt;
+    border-top: 2px solid black;
+    width: 50%;
+    height: 2em;
+}
+
+.table__users tr:last-child td{
+    border-bottom: 2px solid black;
+}
+
+.table__users tr td:nth-child(2n+1) {
+    border-right: 2px solid black;
+}
+
+.button__delete-everyone {
+    margin: 20px 0 20px 0; /* top left bottom right */
+    border-radius: 40px;
+    width: 150px;
+    align-self: flex-end;
+}

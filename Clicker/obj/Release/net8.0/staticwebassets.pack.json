@@ -1,7 +1,19 @@
 {
   "Files": [
     {
+<<<<<<< HEAD
+      "Id": "G:\\Жесткий диск\\ВУЗ ИГУ\\1 КУРС\\ВЕБ-ТЕХНОЛОГИИ\\Повторение\\ASProject\\Clicker\\wwwroot\\_Layout+Home.html",
+      "PackagePath": "staticwebassets\\_Layout+Home.html"
+    },
+    {
+      "Id": "G:\\Жесткий диск\\ВУЗ ИГУ\\1 КУРС\\ВЕБ-ТЕХНОЛОГИИ\\Повторение\\ASProject\\Clicker\\wwwroot\\_Layout+LoginForm.html",
+      "PackagePath": "staticwebassets\\_Layout+LoginForm.html"
+    },
+    {
+      "Id": "G:\\Жесткий диск\\ВУЗ ИГУ\\1 КУРС\\ВЕБ-ТЕХНОЛОГИИ\\Повторение\\ASProject\\Clicker\\wwwroot\\bootstrap\\css\\bootstrap-grid.css",
+=======
       "Id": "C:\\Users\\Desiderium HCS\\Desktop\\ASProject\\Clicker\\wwwroot\\bootstrap\\css\\bootstrap-grid.css",
+>>>>>>> b547e851aa222495380f7400c476eed34234da2f
       "PackagePath": "staticwebassets\\bootstrap\\css\\bootstrap-grid.css"
     },
     {

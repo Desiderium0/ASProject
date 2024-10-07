@@ -1,6 +1,10 @@
 {
   "Version": 1,
+<<<<<<< HEAD
+  "Hash": "S0DS3K0cIpEbnTkNZR7OEzFowkb/BoZFqoflbdCVRsk=",
+=======
   "Hash": "lhs+ptNXv7zLxvhXKN/9kqQHUWxFzt3eOXyrR3Iatqo=",
+>>>>>>> b547e851aa222495380f7400c476eed34234da2f
   "Source": "Clicker",
   "BasePath": "_content/Clicker",
   "Mode": "Default",
@@ -17,7 +21,49 @@
   ],
   "Assets": [
     {
+<<<<<<< HEAD
+      "Identity": "G:\\Жесткий диск\\ВУЗ ИГУ\\1 КУРС\\ВЕБ-ТЕХНОЛОГИИ\\Повторение\\ASProject\\Clicker\\wwwroot\\_Layout+Home.html",
+      "SourceId": "Clicker",
+      "SourceType": "Discovered",
+      "ContentRoot": "G:\\Жесткий диск\\ВУЗ ИГУ\\1 КУРС\\ВЕБ-ТЕХНОЛОГИИ\\Повторение\\ASProject\\Clicker\\wwwroot\\",
+      "BasePath": "_content/Clicker",
+      "RelativePath": "_Layout+Home.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\_Layout+Home.html"
+    },
+    {
+      "Identity": "G:\\Жесткий диск\\ВУЗ ИГУ\\1 КУРС\\ВЕБ-ТЕХНОЛОГИИ\\Повторение\\ASProject\\Clicker\\wwwroot\\_Layout+LoginForm.html",
+      "SourceId": "Clicker",
+      "SourceType": "Discovered",
+      "ContentRoot": "G:\\Жесткий диск\\ВУЗ ИГУ\\1 КУРС\\ВЕБ-ТЕХНОЛОГИИ\\Повторение\\ASProject\\Clicker\\wwwroot\\",
+      "BasePath": "_content/Clicker",
+      "RelativePath": "_Layout+LoginForm.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\_Layout+LoginForm.html"
+    },
+    {
+      "Identity": "G:\\Жесткий диск\\ВУЗ ИГУ\\1 КУРС\\ВЕБ-ТЕХНОЛОГИИ\\Повторение\\ASProject\\Clicker\\wwwroot\\bootstrap\\css\\bootstrap.css",
+=======
       "Identity": "C:\\Users\\Desiderium HCS\\Desktop\\ASProject\\Clicker\\wwwroot\\bootstrap\\css\\bootstrap.css",
+>>>>>>> b547e851aa222495380f7400c476eed34234da2f
       "SourceId": "Clicker",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Desiderium HCS\\Desktop\\ASProject\\Clicker\\wwwroot\\",
